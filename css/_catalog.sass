@@ -199,3 +199,43 @@
             margin-bottom: 10px
     & input
         margin-right: 10px
+// Планшет
+@media ( max-width: 1023px )
+    .submenu
+        margin-top: 21px
+        margin-bottom: 40px
+    .filter
+        width: 100%
+    .sort
+        padding-right: 8px
+        &__summary
+            white-space: nowrap
+            font-size: 12px
+            line-height: 14px
+    .product
+        &:last-child
+            display: none
+    .product-box
+        padding-bottom: 40px
+    .fetured-items
+        padding-bottom: 63px
+
+// Телефон
+@media ( max-width: 767px )
+    .promo-other
+        justify-content: center
+        flex-direction: column
+        row-gap: 32px
+    .sort
+        &__summary svg
+            padding-left: 9px
+        &__details:not(:last-child)
+            margin-right: 23px
+    .filter
+        &__details
+            width: 360px
+        &__summary
+            display: none
+        & svg
+            width: 37px
+            height: 25px

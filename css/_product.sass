@@ -1,0 +1,88 @@
+
+.slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #F7F7F7
+    border: 1px solid #EAEAEA
+    height: 777px
+    & a:hover svg path
+        fill: $selectColor
+    &__buttom
+        width: 47px
+        height: 47px
+        +centerColums ()
+        background: rgba(42, 42, 42, 0.15)
+
+.detail
+    position: relative
+    width: $widthSite
+    background: #FFFFFF
+    border: 1px solid #EAEAEA
+    margin: 0 auto
+    text-align: center
+    padding-top: 65px
+    padding-bottom: 65px
+    box-sizing: border-box
+    margin-top: -65px
+    margin-bottom: 130px
+    &__heading-top
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $selectColor
+    &__heading-bottom
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+        margin-bottom: 48px
+    &__text
+        width: 555px
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+        margin: 0 auto 32px
+    &__price
+        font-style: normal
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor2
+    &__line-mini
+        background: $selectColor2
+        width: 63px
+        height: 3px
+        margin: 12px auto
+    &__line
+        border: 1px solid #EAEAEA
+        width: 640px
+        margin: 65px auto
+    &__ul
+        display: flex
+        justify-content: center
+        margin-bottom: 48px
+    &__ul li:not(:last-child)
+        margin-right: 22px
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        display: flex
+        align-items: center
+    &__link svg
+        padding-left: 9px
+
+.button__buy
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #F26376

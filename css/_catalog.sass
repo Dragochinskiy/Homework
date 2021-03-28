@@ -1,0 +1,241 @@
+.block__navigation
+    display: flex
+    justify-content: center
+
+.navigation
+    display: flex
+    align-items: center
+    padding: 15px
+    border: 1px solid #EBEBEB
+
+    & ul
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #EBEBEB
+
+    & ul a
+        display: flex
+        color: #EBEBEB
+
+    & ul a:hover
+        color: $selectColor2
+
+    & svg path:hover
+        fill: $selectColor2
+
+.active
+    color: $selectColor2
+
+.navigation ul li:not(:last-child)
+    margin-right: 16px
+
+.block__navigation
+    display: flex
+    justify-content: center
+
+.navigation
+    display: flex
+    align-items: center
+    padding: 15px
+    border: 1px solid #EBEBEB
+
+    & ul
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #EBEBEB
+
+    & ul a
+        display: flex
+        color: #EBEBEB
+
+    & ul a:hover
+        color: $selectColor2
+
+    & svg path:hover
+        fill: $selectColor2
+
+.active
+    color: $selectColor2
+
+.navigation ul li:not(:last-child)
+    margin-right: 16px
+
+.promo-other
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__header
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor
+
+.breadcrumbs ul
+    display: flex
+
+    & li
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    & li a
+        color: #636363
+
+    & li a:hover
+        color: $selectColor
+
+    & li:not(:last-child):after
+        content: "/"
+        font-weight: 300
+        padding-left: 5px
+
+    & li:last-child
+        font-weight: 700
+        color: $selectColor
+
+    & li:not(:last-child)
+        padding-right: 5px
+
+.submenu
+    display: flex
+    margin-top: 48px
+    margin-bottom: 64px
+
+.filter
+    margin-right: 30px
+    position: relative
+    width: 360px
+    &__summary
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
+    &__details
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        width: 100%
+        padding: 16px
+        margin-top: -16px
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            padding: 16px
+            & .filter__summary
+                color: $selectColor
+            & path
+                fill: $selectColor
+    &__details-in
+        &[open] .filter__category
+            color: $selectColor
+
+    &__category
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        border-left: 5px solid $selectColor2
+        border-bottom: 1px solid #EBEBEB
+        padding: 11px 0 11px 11px
+        margin-top: 16px
+
+    &__category-list
+        padding: 24px 0 8px 11px
+        & a
+            line-height: 25px
+            font-size: 14px
+            color: #6F6E6E
+            &:hover
+                color: $selectColor
+
+.sort
+    display: flex
+    &__details
+        position: relative
+    &__details:not(:last-child)
+        margin-right: 28px
+    &__summary
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        & svg
+            padding-left: 11px
+    &__details-size
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        padding: 10px
+        position: absolute
+        width: 79px
+        z-index: 1
+        box-sizing: border-box
+        margin-top: 5px
+    &__fieldset
+        display: flex
+        flex-direction: column
+        font-size: 14px
+        line-height: 16px
+        color: #6F6E6E
+    &__label
+        display: flex
+        align-items: center
+        &:not(:last-child)
+            margin-bottom: 10px
+    & input
+        margin-right: 10px
+// Планшет
+@media ( max-width: 1023px )
+    .submenu
+        margin-top: 21px
+        margin-bottom: 40px
+    .filter
+        width: 100%
+    .sort
+        padding-right: 8px
+        &__summary
+            white-space: nowrap
+            font-size: 12px
+            line-height: 14px
+    .product
+        &:last-child
+            display: none
+    .product-box
+        padding-bottom: 40px
+    .fetured-items
+        padding-bottom: 63px
+
+// Телефон
+@media ( max-width: 767px )
+    .promo-other
+        justify-content: center
+        flex-direction: column
+        row-gap: 32px
+    .sort
+        &__summary svg
+            padding-left: 9px
+        &__details:not(:last-child)
+            margin-right: 23px
+    .filter
+        &__details
+            width: 360px
+        &__summary
+            display: none
+        & svg
+            width: 37px
+            height: 25px

@@ -416,6 +416,105 @@ summary
     -webkit-animation: text-flicker-in-glow 4s linear both
     animation: text-flicker-in-glow 4s linear both
 
+// Планшет
+@media ( max-width: 1023px )
+    .center
+        padding-left: calc(50% - 368px)
+        padding-right: calc(50% - 368px)
+    .sale
+        padding-top: 20px
+        padding-bottom: 154px
+    .sale__top
+        gap: 20px
+    .sale__bottom
+        margin-top: 20px
+    .fetured-items__text
+        padding-bottom: 73px
+    .product-box
+        gap: 16px
+        padding-bottom: 32px
+    .fetured-items
+        padding-bottom: 65px
+    .advantage
+        row-gap: 48px
+        padding-top: 48px
+        padding-bottom: 64px
+    .bg__footer
+        justify-content: center
+        flex-direction: column
+        row-gap: 48px
+        height: 614px
+    .bg__images
+        background-position: -460px -50px
+        background-size: 350%
+    .footer
+        &__icon
+            padding: 0
+
+// Телефон
+@media ( max-width: 767px )
+    .promo
+        min-height: 360px
+        display: flex
+        align-items: center
+        justify-content: center
+    .center
+        padding-left: calc(50% - 200px)
+        padding-right: calc(50% - 200px)
+    .promo
+        &__img
+            display: none
+        &__text
+            padding: 0
+        &__h1
+            font-size: 38px
+            line-height: 45px
+        &__h2
+            font-size: 20px
+            line-height: 24px
+    .sale
+        padding: 65px 16px 65px 16px
+        &__top
+            gap: 0
+            row-gap: 32px
+            flex-direction: column
+        &__bottom
+            margin-top: 32px
+    .fetured-items__text
+        padding-bottom: 64px
+    .product
+        padding-left: 8px
+        padding-right: 8px
+    .product-box
+        padding-bottom: 41px
+    .fetured-items
+        padding-bottom: 96px
+    .advantage
+        padding-bottom: 81px
+    .bg__footer
+        height: 609px
+        row-gap: 59px
+    .bg__footer-right p
+        padding-bottom: 22px
+    .bg__images
+        background-position: -450px bottom
+        background-size: cover
+    .footer
+        flex-direction: column-reverse
+        &__text
+            padding: 40px 0 9px 0
+        &__icon
+            padding-top: 43px
+    .minus-mobile
+        display: none
+    .header__right a:not(:last-child)
+        margin-right: 0
+    .header
+        &__left
+            margin-left: 16px
+        &__right
+            margin-right: 16px
+
 @import catalog
 @import product
 @import card

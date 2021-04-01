@@ -86,3 +86,40 @@
     font-size: 16px
     line-height: 19px
     color: #F26376
+
+// Планшет
+@media ( max-width: 1023px )
+    .slider
+        height: auto
+    .detail
+        margin-top: 0
+        width: auto
+    .images
+        max-width: 466px
+        margin-top: 30px
+        margin-bottom: 30px
+        & img
+            width: 100%
+    .fetured-items
+        padding-bottom: 128px
+
+// Телефон
+@media ( max-width: 767px )
+    .detail
+        margin-bottom: 65px
+        &__heading-bottom
+            margin-bottom: 32px
+        &__text
+            width: auto
+            margin-left: 24px
+            margin-right: 24px
+        &__line
+            width: 174px
+            margin: 32px auto 50px
+        &__link
+            font-size: 10px
+            line-height: 12px
+        &__ul
+            margin-bottom: 64px
+    .fetured-items
+        padding-bottom: 64px

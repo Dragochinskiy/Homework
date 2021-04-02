@@ -1557,6 +1557,128 @@ summary::-webkit-details-marker {
   margin-bottom: 17px;
 }
 
+@media (max-width: 1023px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__ticket {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card__ticket-description {
+    width: 472px;
+  }
+  .card__button-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+    margin-bottom: 64px;
+  }
+  .card__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card__contact {
+    margin-bottom: 0;
+  }
+  .card__info {
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin: 39px 0 96px 0;
+  }
+  .card__heading {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+  }
+  .card__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+  .card__quantity {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 15px;
+    width: 24px;
+  }
+  .card__ticket-description {
+    padding: 14px 14px 14px 17px;
+    min-width: 214px;
+  }
+  .card__button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .card__form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__info {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .card__exit svg {
+    width: 10px;
+    height: 10px;
+  }
+  .card__right {
+    margin-top: 0;
+  }
+  .card__ticket {
+    max-height: 188px;
+  }
+  .card__ticket img {
+    max-height: 188px;
+  }
+  .card__text-nb {
+    margin-bottom: 0px;
+  }
+  .card__quantity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card__button {
+    padding: 8px 17px;
+    width: 100%;
+    text-align: center;
+  }
+  .card__button-block {
+    margin-top: 30px;
+    gap: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .card__contact {
+    width: 100%;
+  }
+  .card__info {
+    margin-top: 48px;
+  }
+  .card__list {
+    margin-bottom: 48px;
+  }
+}
+
 .reg {
   display: -webkit-box;
   display: -ms-flexbox;
